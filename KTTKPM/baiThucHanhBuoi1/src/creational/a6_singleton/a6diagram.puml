@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+class MainA6
+
+class DataAccess{
+    -{static} DataAccess instance
+    -DataAccess()
+    +DataAccess getInstance()
+    +void Them(SanPham s)
+    +void inKQ()
+}
+class SanPham
+DataAccess*-->SanPham:"dsSP"
+MainA6-->DataAccess
+@enduml
